@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Minichan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <!-- Angular related-->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+    <!--<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+    <!--Other-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/mini-lightbox/dist/mini-lightbox.min.js"></script>
+    <script src="node_modules/bootstrap-filestyle/src/bootstrap-filestyle.js"></script>
+    
+    <!--Custom-->
+    <link rel="stylesheet" href="styles/minichan.css">
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+<app>
+    Loading...
+</app>
+</body>
+</html>

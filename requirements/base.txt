@@ -1,0 +1,5 @@
+Django==1.9.8
+djangorestframework==3.4.0
+path.py==8.2.1
+tenv==0.1.0
+psycopg2==2.6.2
